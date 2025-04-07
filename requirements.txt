@@ -9,4 +9,5 @@ seaborn
 jupyter
 notebook
 ipykernel
-gunicorn 
+Django>=3.2,<5.0
+gunicorn
