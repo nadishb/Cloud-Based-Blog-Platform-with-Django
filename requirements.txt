@@ -11,3 +11,4 @@ notebook
 ipykernel
 Django>=3.2,<5.0
 gunicorn
+dj-database-url
