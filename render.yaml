@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cloud-blog
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn cloud_blog.wsgi:application"
+    envVars:
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: cloud-blog.onrender.com
