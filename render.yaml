@@ -6,7 +6,7 @@ services:
     startCommand: "gunicorn cloud_blog.wsgi:application"
     envVars:
       - key: SECRET_KEY
-        value: your-secret-key
+        value: fd-8y-3mpo(f(+7-s+n@$-4l1m#8=fxvk7isxb&2zn*s-^!)l*
       - key: DEBUG
         value: False
       - key: ALLOWED_HOSTS
