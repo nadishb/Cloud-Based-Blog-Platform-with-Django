@@ -284,7 +284,7 @@ python-json-logger==2.0.7
 python-magic==0.4.27
 python-oxmsg==0.0.2
 pytz==2024.2
-pywin32==306
+
 pywinpty==2.0.13
 PyYAML==6.0.2
 pyzmq==26.2.0
