@@ -2,12 +2,12 @@ services:
   - type: web
     name: cloud-blog
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn cloud_blog.wsgi:application"
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: "gunicorn cloud_blog.wsgi:application --bind 0.0.0.0:$PORT"
     envVars:
       - key: SECRET_KEY
-        value: fd-8y-3mpo(f(+7-s+n@$-4l1m#8=fxvk7isxb&2zn*s-^!)l*
+        value: django-insecure-s=xu3b8-qco=8f9$it01fv1mskpk$!eeoo)kek%r5$5=_#m@8e
       - key: DEBUG
         value: False
-      - key: ALLOWED_HOSTS
-        value: cloud-blog.onrender.com
+      - key: DATABASE_URL
+        value: postgresql://cloudblog_db_user:oAt3MmjlRku1eU0uGPYMQyzZ9QZokzAU@dpg-cvq4hore5dus73f1erb0-a.oregon-postgres.render.com/cloudblog_db

@@ -9,7 +9,7 @@ seaborn
 jupyter
 notebook
 ipykernel
-Django>=3.2,<5.0
+Django>=5.2
 gunicorn
 dj-database-url
 python-decouple
